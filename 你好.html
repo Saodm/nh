@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>频闪的你好</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .flash-text {
+            font-size: 15vw; /* 响应式大字，随屏幕宽度变化 */
+            font-weight: bold;
+            color: #333;
+            animation: flash 0.1s infinite alternate; /* 频闪动画 */
+        }
+
+        @keyframes flash {
+            from { opacity: 1; } /* 初始状态：完全可见 */
+            to { opacity: 0; }   /* 结束状态：完全透明 */
+        }
+    </style>
+</head>
+<body>
+    <div class="flash-text">你好</div>
+</body>
+</html>
